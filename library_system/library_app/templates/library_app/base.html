@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <title>Library System</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <nav>
+        <a href="{% url 'book_list' %}">Books</a> |
+        <a href="{% url 'user_dashboard' %}">My Dashboard</a> |
+        {% if user.is_staff %}
+        <a href="{% url 'add_book' %}">Add Book</a> |
+        <a href="{% url 'admin_dashboard' %}">Admin Panel</a>
+        {% endif %}
+    </nav>
+    <hr>
+    {% block content %}{% endblock %}
+</body>
+</html>

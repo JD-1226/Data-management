@@ -1,0 +1,262 @@
+[
+  {
+    "model": "library_app.book",
+    "pk": 1,
+    "fields": {
+      "title": "Crime and Punishment",
+      "author": "Fyodor Dostoevsky",
+      "isbn": "9780143058144",
+      "available": true,
+      "borrower": null,
+      "borrowed_date": null,
+      "due_date": null
+    }
+  },
+  {
+    "model": "library_app.book",
+    "pk": 2,
+    "fields": {
+      "title": "The Brothers Karamazov",
+      "author": "Fyodor Dostoevsky",
+      "isbn": "9780374528379",
+      "available": true,
+      "borrower": null,
+      "borrowed_date": null,
+      "due_date": null
+    }
+  },
+  {
+    "model": "library_app.book",
+    "pk": 3,
+    "fields": {
+      "title": "Notes from Underground",
+      "author": "Fyodor Dostoevsky",
+      "isbn": "9780486270531",
+      "available": true,
+      "borrower": null,
+      "borrowed_date": null,
+      "due_date": null
+    }
+  },
+  {
+    "model": "library_app.book",
+    "pk": 4,
+    "fields": {
+      "title": "The Trial",
+      "author": "Franz Kafka",
+      "isbn": "9780805209990",
+      "available": true,
+      "borrower": null,
+      "borrowed_date": null,
+      "due_date": null
+    }
+  },
+  {
+    "model": "library_app.book",
+    "pk": 5,
+    "fields": {
+      "title": "The Metamorphosis",
+      "author": "Franz Kafka",
+      "isbn": "9780553213690",
+      "available": true,
+      "borrower": null,
+      "borrowed_date": null,
+      "due_date": null
+    }
+  },
+  {
+    "model": "library_app.book",
+    "pk": 6,
+    "fields": {
+      "title": "The Stranger",
+      "author": "Albert Camus",
+      "isbn": "9780679720201",
+      "available": true,
+      "borrower": null,
+      "borrowed_date": null,
+      "due_date": null
+    }
+  },
+  {
+    "model": "library_app.book",
+    "pk": 7,
+    "fields": {
+      "title": "Nausea",
+      "author": "Jean-Paul Sartre",
+      "isbn": "9780811220309",
+      "available": true,
+      "borrower": null,
+      "borrowed_date": null,
+      "due_date": null
+    }
+  },
+  {
+    "model": "library_app.book",
+    "pk": 8,
+    "fields": {
+      "title": "The Bell Jar",
+      "author": "Sylvia Plath",
+      "isbn": "9780060837020",
+      "available": true,
+      "borrower": null,
+      "borrowed_date": null,
+      "due_date": null
+    }
+  },
+  {
+    "model": "library_app.book",
+    "pk": 9,
+    "fields": {
+      "title": "Ariel",
+      "author": "Sylvia Plath",
+      "isbn": "9780060931728",
+      "available": true,
+      "borrower": null,
+      "borrowed_date": null,
+      "due_date": null
+    }
+  },
+  {
+    "model": "library_app.book",
+    "pk": 10,
+    "fields": {
+      "title": "The Communist Manifesto",
+      "author": "Karl Marx & Friedrich Engels",
+      "isbn": "9780140447576",
+      "available": true,
+      "borrower": null,
+      "borrowed_date": null,
+      "due_date": null
+    }
+  },
+  {
+    "model": "library_app.book",
+    "pk": 11,
+    "fields": {
+      "title": "Das Kapital",
+      "author": "Karl Marx",
+      "isbn": "9780199535705",
+      "available": true,
+      "borrower": null,
+      "borrowed_date": null,
+      "due_date": null
+    }
+  },
+  {
+    "model": "library_app.book",
+    "pk": 12,
+    "fields": {
+      "title": "Guerrilla Warfare",
+      "author": "Che Guevara",
+      "isbn": "9780802135582",
+      "available": true,
+      "borrower": null,
+      "borrowed_date": null,
+      "due_date": null
+    }
+  },
+  {
+    "model": "library_app.book",
+    "pk": 13,
+    "fields": {
+      "title": "The Motorcycle Diaries",
+      "author": "Che Guevara",
+      "isbn": "9781876175702",
+      "available": true,
+      "borrower": null,
+      "borrowed_date": null,
+      "due_date": null
+    }
+  },
+  {
+    "model": "library_app.book",
+    "pk": 14,
+    "fields": {
+      "title": "The Wretched of the Earth",
+      "author": "Frantz Fanon",
+      "isbn": "9780802141323",
+      "available": true,
+      "borrower": null,
+      "borrowed_date": null,
+      "due_date": null
+    }
+  },
+  {
+    "model": "library_app.book",
+    "pk": 15,
+    "fields": {
+      "title": "Homage to Catalonia",
+      "author": "George Orwell",
+      "isbn": "9780156421171",
+      "available": true,
+      "borrower": null,
+      "borrowed_date": null,
+      "due_date": null
+    }
+  },
+  {
+    "model": "library_app.book",
+    "pk": 16,
+    "fields": {
+      "title": "Animal Farm",
+      "author": "George Orwell",
+      "isbn": "9780451526342",
+      "available": true,
+      "borrower": null,
+      "borrowed_date": null,
+      "due_date": null
+    }
+  },
+  {
+    "model": "library_app.book",
+    "pk": 17,
+    "fields": {
+      "title": "1984",
+      "author": "George Orwell",
+      "isbn": "9780451524935",
+      "available": true,
+      "borrower": null,
+      "borrowed_date": null,
+      "due_date": null
+    }
+  },
+  {
+    "model": "library_app.book",
+    "pk": 18,
+    "fields": {
+      "title": "Steppenwolf",
+      "author": "Hermann Hesse",
+      "isbn": "9780142437186",
+      "available": true,
+      "borrower": null,
+      "borrowed_date": null,
+      "due_date": null
+    }
+  },
+  {
+    "model": "library_app.book",
+    "pk": 19,
+    "fields": {
+      "title": "The Unbearable Lightness of Being",
+      "author": "Milan Kundera",
+      "isbn": "9780061148521",
+      "available": true,
+      "borrower": null,
+      "borrowed_date": null,
+      "due_date": null
+    }
+  },
+  {
+    "model": "library_app.book",
+    "pk": 20,
+    "fields": {
+      "title": "Man’s Search for Meaning",
+      "author": "Viktor Frankl",
+      "isbn": "9780807014295",
+      "available": true,
+      "borrower": null,
+      "borrowed_date": null,
+      "due_date": null
+    }
+  }
+]

@@ -1,0 +1,11 @@
+{% extends 'library_app/base.html' %}
+{% block content %}
+<h2>Admin Dashboard</h2>
+<ul>
+  <li>Total Books: {{ total_books }}</li>
+  <li>Available Books: {{ available_books }}</li>
+  <li>Borrowed Books: {{ borrowed_books }}</li>
+  <li>Total Users: {{ total_users }}</li>
+  <li>Users with Borrowed Books: {{ users_with_books }}</li>
+</ul>
+{% endblock %}

@@ -1,0 +1,30 @@
+{% extends 'library_app/base.html' %}
+{% block content %}
+<h2>Available Books</h2>
+<table border="1">
+    <tr>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Status</th>
+        <th>Action</th>
+    </tr>
+    {% for book in books %}
+        <tr>
+            <td>{{ book.title }}</td>
+            <td>{{ book.author }}</td>
+            <td>
+                {% if book.available %}
+                    Available
+                {% else %}
+                    Borrowed
+                {% endif %}
+            </td>
+            <td>
+                {% if book.available %}
+                    <a href="{% url 'borrow_book' book.id %}">Borrow</a>
+                {% endif %}
+            </td>
+        </tr>
+    {% endfor %}
+</table>
+{% endblock %}
