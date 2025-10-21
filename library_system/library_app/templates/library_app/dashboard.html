@@ -3,19 +3,21 @@
 <h2>Welcome, {{ user.username }}</h2>
 <h3>Your Borrowed Books</h3>
 <table border="1">
-  <tr><th>Title</th><th>Due Date</th><th>Status</th><th>Action</th></tr>
-  {% for book in borrowed_books %}
+  <tr><th>Title</th><th>Borrowed Date</th><th>Status</th><th>Action</th></tr>
+  {% for copy in borrowed_books %}
   <tr>
-    <td>{{ book.title }}</td>
-    <td>{{ book.due_date }}</td>
+    <td>{{ copy.book.title }}</td>
+    <td>{{ copy.borrowed_date|default:"-" }}</td>
     <td>
-      {% if book.due_date < today %}
+      {% if copy.borrowed_date and copy.borrowed_date < today %}
         <span style="color:red;">Overdue</span>
       {% else %}
         On Time
       {% endif %}
     </td>
-    <td><a href="{% url 'return_book' book.id %}">Return</a></td>
+    <td>
+      <a href="{% url 'return_book' copy.id %}">Return</a>
+    </td>
   </tr>
   {% empty %}
   <tr><td colspan="4">No books borrowed.</td></tr>

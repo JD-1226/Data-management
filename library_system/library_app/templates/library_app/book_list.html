@@ -1,30 +1,45 @@
 {% extends 'library_app/base.html' %}
+{% load static %}
 {% block content %}
-<h2>Available Books</h2>
-<table border="1">
-    <tr>
-        <th>Title</th>
-        <th>Author</th>
-        <th>Status</th>
-        <th>Action</th>
-    </tr>
+<link rel="stylesheet" href="{% static 'css/book_list.css' %}">
+
+<div class="book-container">
+  <h2>📚 Library Collection</h2>
+
+  <form method="get" action="{% url 'book_list' %}" class="search-form">
+    <input type="text" name="q" placeholder="Search books or authors..." value="{{ query|default:'' }}">
+    <button type="submit">Search</button>
+  </form>
+
+  <div class="book-grid">
     {% for book in books %}
-        <tr>
-            <td>{{ book.title }}</td>
-            <td>{{ book.author }}</td>
-            <td>
-                {% if book.available %}
-                    Available
-                {% else %}
-                    Borrowed
-                {% endif %}
-            </td>
-            <td>
-                {% if book.available %}
-                    <a href="{% url 'borrow_book' book.id %}">Borrow</a>
-                {% endif %}
-            </td>
-        </tr>
+      <div class="book-card">
+        {% if book.image %}
+          <img src="{{ book.image.url }}" alt="{{ book.title }}">
+        {% else %}
+          <img src="{% static 'images/default_book.png' %}" alt="No image">
+        {% endif %}
+
+        <h3>{{ book.title }}</h3>
+        <p>by {{ book.author }}</p>
+
+        <p>
+          Available copies: {{ book.available_copies }} copies available
+        </p>
+
+        {% if book.user_has_copy %}
+          <!-- user already borrowed one copy -> show Return button -->
+          <a href="{% url 'return_book' book.user_borrowed_copy_id %}" class="borrow-btn">Return</a>
+        {% elif book.available_copies > 0 %}
+          <!-- copies available and user has none -> Borrow -->
+          <a href="{% url 'borrow_book' book.id %}" class="borrow-btn">Borrow</a>
+        {% else %}
+          <button class="unavailable-btn" disabled>Unavailable</button>
+        {% endif %}
+      </div>
+    {% empty %}
+      <p>No books found.</p>
     {% endfor %}
-</table>
+  </div>
+</div>
 {% endblock %}

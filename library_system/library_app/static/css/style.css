@@ -19,3 +19,107 @@ th, td {
   padding: 10px;
   border: 1px solid #ddd;
 }
+
+
+.book-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.book-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 1.8rem;
+}
+
+.search-form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.search-form input {
+  width: 60%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px 0 0 6px;
+  font-size: 1rem;
+}
+
+.search-form button {
+  padding: 10px 16px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  font-size: 1rem;
+  border-radius: 0 6px 6px 0;
+  cursor: pointer;
+}
+
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.book-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 15px;
+  transition: transform 0.2s;
+}
+
+.book-card:hover {
+  transform: translateY(-4px);
+}
+
+.book-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.book-card h3 {
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
+
+.book-card p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.available {
+  color: green;
+}
+
+.unavailable {
+  color: red;
+}
+
+.borrow-btn {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+}
+
+.borrow-btn:hover {
+  background-color: #0056b3;
+}
+
+.unavailable-btn {
+  padding: 8px 16px;
+  background-color: gray;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: not-allowed;
+}
