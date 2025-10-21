@@ -1,12 +1,12 @@
-<!DOCTYPE html>
-{% load static %} 
+{% load static %}
+<!DOCTYPE html> 
 <html>
 <head>
   <title>Login</title>
   <link rel="stylesheet" href="{% static 'style.css' %}">
 </head>
 <body>
-  <div class="form-container">
+  <div class="login-container">
     <h2>Welcome Back</h2>
     <form method="POST">
       {% csrf_token %}
